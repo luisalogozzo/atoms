@@ -136,7 +136,7 @@ header #jumbo-girl {
 
 header #jumbo-line {
   position: absolute;
-  bottom: 380px;
+  bottom: 350px;
   right: 363px;
 }
 
@@ -158,7 +158,7 @@ header #newsletter-box h3 {
 }
 
 header #newsletter-box p {
-  font-family: "Helvetica", sans-serif;
+  font-family: "FiraSans-Regular", sans-serif;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.9);
   letter-spacing: 0;
@@ -177,9 +177,27 @@ header #newsletter-box #email #email-input {
   width: 100%;
 }
 
+header #newsletter-box #email #email-input::-webkit-input-placeholder {
+  font-family: "FiraSans-Regular", sans-serif;
+  font-size: 14px;
+  color: #CACACA;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
 header #newsletter-box #email label {
   font-family: "FiraSans-Regular", sans-serif;
   font-size: 12px;
+}
+
+header #newsletter-box #email .checkbox-container {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+header #newsletter-box #email .checkbox-container input {
+  margin-right: 5px;
 }
 
 main {
@@ -323,23 +341,39 @@ main #why-choose-us .container .text p {
   line-height: 24px;
 }
 
-main #our-blog .container .slider {
-  height: 600px;
+main #our-blog {
+  margin-top: 130px;
+}
+
+main #our-blog .container h2 {
+  font-family: "Butler", sans-serif;
+  font-size: 48px;
+  color: #293E59;
+  letter-spacing: -0.3px;
+  line-height: 56px;
+}
+
+main #our-blog .slider {
+  display: flex;
   overflow-x: scroll;
 }
 
-main #our-blog .container .slider .articles {
-  display: inline-block;
+main #our-blog .slider .articles {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   width: 421px;
-  height: 100%;
+  height: 600px;
   background-repeat: no-repeat;
 }
 
-main #our-blog .container .slider .articles .articles-info {
+main #our-blog .slider .articles .articles-info {
+  padding: 30px 20px;
   width: 375px;
 }
 
-main #our-blog .container .slider .articles .articles-info small {
+main #our-blog .slider .articles .articles-info small {
   display: block;
   font-family: "Helvetica", sans-serif;
   font-size: 12px;
@@ -348,7 +382,7 @@ main #our-blog .container .slider .articles .articles-info small {
   line-height: 18px;
 }
 
-main #our-blog .container .slider .articles .articles-info span {
+main #our-blog .slider .articles .articles-info span {
   display: inline-block;
   font-family: "Helvetica", sans-serif;
   font-size: 12px;
@@ -361,7 +395,7 @@ main #our-blog .container .slider .articles .articles-info span {
   margin: 10px 0;
 }
 
-main #our-blog .container .slider .articles .articles-info h4 {
+main #our-blog .slider .articles .articles-info h4 {
   font-family: "Butler", sans-serif;
   font-size: 32px;
   color: #FFFFFF;
@@ -369,7 +403,7 @@ main #our-blog .container .slider .articles .articles-info h4 {
   line-height: 40px;
 }
 
-main #our-blog .container .slider .articles .articles-info p {
+main #our-blog .slider .articles .articles-info p {
   font-family: "FiraSans-Medium", sans-serif;
   font-size: 14px;
   color: #FFFFFF;
@@ -377,23 +411,64 @@ main #our-blog .container .slider .articles .articles-info p {
   line-height: 20px;
 }
 
-main #our-blog .container .slider #img1 {
+main #our-blog .slider #img1 {
   background-size: cover;
   background-image: url("https://api-lunacy.icons8.com/api/assets/79cb8eb8-928b-4395-b457-4eb55e9f3053/group_3_objects.png");
 }
 
-main #our-blog .container .slider #img2 {
+main #our-blog .slider #img2 {
   background-size: cover;
   background-image: url("https://api-lunacy.icons8.com/api/assets/cbd6a075-4976-4a9a-a7d1-14985b6d66a4/Rectangle-Copy.png");
 }
 
-main #our-blog .container .slider #img3 {
+main #our-blog .slider #img3 {
   background-size: cover;
   background-image: url("https://api-lunacy.icons8.com/api/assets/e4b3cb99-91f7-46be-81f3-0bef82251463/Rectangle-Copy-2.png");
 }
 
-main #our-blog .container .slider #img4 {
+main #our-blog .slider #img4 {
   background-size: cover;
   background-image: url("https://api-lunacy.icons8.com/api/assets/a8909662-1305-4bc9-bb96-7b389c82064c/Rectangle-Copy-3.png");
+}
+
+main #our-blog .slider #img5 {
+  background-size: cover;
+  background-image: url("https://api-lunacy.icons8.com/api/assets/a8909662-1305-4bc9-bb96-7b389c82064c/Rectangle-Copy-3.png");
+}
+
+main #out-platform {
+  margin-top: 144px;
+}
+
+main #out-platform .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main #out-platform .container .text {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 310px;
+}
+
+main #out-platform .container .text h3 {
+  font-family: "Butler", sans-serif;
+  font-size: 48px;
+  color: #293E59;
+  letter-spacing: -0.3px;
+  line-height: 56px;
+}
+
+main #out-platform .container .text p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Helvetica;
+  font-size: 16px;
+  color: #9B9B9B;
+  letter-spacing: 0;
+  line-height: 24px;
 }
 
