@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+.active {
+  color: white;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -18,7 +22,7 @@ a {
   display: inline-block;
   height: 40px;
   border-radius: 20px;
-  font-family: "Fira Sans";
+  font-family: "FiraSans-Regular", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 35px;
@@ -169,20 +173,39 @@ header #newsletter-box #email {
   margin-top: 50px;
 }
 
-header #newsletter-box #email #email-input {
-  display: inline;
-  border: 0px;
+header #newsletter-box #email #email-input-container {
   border-bottom: 1px solid white;
-  background-color: inherit;
-  width: 100%;
 }
 
-header #newsletter-box #email #email-input::-webkit-input-placeholder {
+header #newsletter-box #email #email-input-container #email-input {
+  display: inline;
+  border: 0px;
+  background-color: inherit;
+  width: 95%;
+  height: 20px;
+  line-height: 20px;
   font-family: "FiraSans-Regular", sans-serif;
   font-size: 14px;
   color: #CACACA;
   letter-spacing: 0;
   line-height: 20px;
+}
+
+header #newsletter-box #email #email-input-container #email-input::-webkit-input-placeholder {
+  font-family: "FiraSans-Regular", sans-serif;
+  font-size: 14px;
+  color: #CACACA;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+header #newsletter-box #email #email-input-container #email-input:active,
+header #newsletter-box #email #email-input-container #email-input:focus {
+  outline: 0;
+}
+
+header #newsletter-box #email #email-input-container .arrow {
+  height: 20px;
 }
 
 header #newsletter-box #email label {
@@ -304,6 +327,7 @@ main #home-help-container .line {
 }
 
 main #why-choose-us .container {
+  position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -358,6 +382,10 @@ main #our-blog .slider {
   overflow-x: scroll;
 }
 
+main #our-blog .slider::-webkit-scrollbar-thumb {
+  color: black;
+}
+
 main #our-blog .slider .articles {
   margin: 10px;
   display: flex;
@@ -384,7 +412,7 @@ main #our-blog .slider .articles .articles-info small {
 
 main #our-blog .slider .articles .articles-info span {
   display: inline-block;
-  font-family: "Helvetica", sans-serif;
+  font-family: "FiraSans-Regular", sans-serif;
   font-size: 12px;
   color: #293E59;
   padding: 0 5px;
@@ -442,13 +470,17 @@ main #out-platform {
 
 main #out-platform .container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
+main #out-platform .container img {
+  flex-grow: 2;
+}
+
 main #out-platform .container .text {
-  margin-left: 10px;
+  margin: 30px;
   display: flex;
+  flex-shrink: 0;
   flex-direction: column;
   justify-content: space-between;
   width: 310px;
@@ -463,12 +495,16 @@ main #out-platform .container .text h3 {
 }
 
 main #out-platform .container .text p {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-family: Helvetica;
   font-size: 16px;
   color: #9B9B9B;
   letter-spacing: 0;
   line-height: 24px;
+}
+
+main #out-platform .container .text a {
+  padding: 0 40px;
 }
 

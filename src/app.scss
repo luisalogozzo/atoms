@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+.active {
+  color: white;
+}
+
 a {
 
   color: black;
@@ -19,7 +23,7 @@ a {
   display: inline-block;
   height: 40px;
   border-radius: 20px;
-  font-family: "Fira Sans";
+  font-family: 'FiraSans-Regular', sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 35px;
@@ -157,20 +161,36 @@ header {
     }
     #email {
       margin-top: 50px;
-      #email-input {
-        display: inline;
-        border: 0px;
+      #email-input-container {
         border-bottom: 1px solid white;
-        background-color: inherit;
-        width: 100%;
-        &::-webkit-input-placeholder {
+        #email-input {
+          display: inline;
+          border: 0px;
+          background-color: inherit;
+          width: 95%;
+          height: 20px;
+          line-height: 20px;
           font-family: 'FiraSans-Regular', sans-serif;
           font-size: 14px;
           color: #CACACA;
           letter-spacing: 0;
           line-height: 20px;
+          &::-webkit-input-placeholder {
+            font-family: 'FiraSans-Regular', sans-serif;
+            font-size: 14px;
+            color: #CACACA;
+            letter-spacing: 0;
+            line-height: 20px;
+          }
+          &:active, &:focus {
+            outline: 0;
+          }
+        }
+        .arrow{
+          height: 20px;
         }
       }
+
       label {
         font-family: 'FiraSans-Regular', sans-serif;
         font-size: 12px;
@@ -286,6 +306,7 @@ main {
 
     #why-choose-us {
       .container {
+        position: relative;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -335,8 +356,10 @@ main {
         }
         .slider {
           display: flex;
-
           overflow-x: scroll;
+          &::-webkit-scrollbar-thumb {
+            color: black;
+          }
           .articles {
             margin: 10px;
             display: flex;
@@ -359,7 +382,7 @@ main {
               }
               span {
                 display: inline-block;
-                font-family: 'Helvetica', sans-serif;
+                font-family: 'FiraSans-Regular', sans-serif;
                 font-size: 12px;
                 color: #293E59;
                 padding: 0 5px;
@@ -413,11 +436,16 @@ main {
       margin-top: 144px;
       .container {
         display: flex;
-        justify-content: space-between;
+        //justify-content: space-between;
         align-items: center;
+        img {
+
+        flex-grow: 2;
+        }
         .text {
-          margin-left: 10px;
+          margin: 30px;
           display: flex;
+          flex-shrink: 0;
           flex-direction: column;
           justify-content: space-between;
           width: 310px;
@@ -429,15 +457,17 @@ main {
             line-height: 56px;
           }
           p {
-            margin-top: 10px;
-            margin-bottom: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
             font-family: Helvetica;
             font-size: 16px;
             color: #9B9B9B;
             letter-spacing: 0;
             line-height: 24px;
           }
-
+          a {
+            padding: 0 40px;
+          }
         }
       }
     }
