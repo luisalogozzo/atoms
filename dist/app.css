@@ -9,12 +9,29 @@
 }
 
 a {
-  color: black;
+  color: #484A54;
   text-decoration: none;
 }
 
-.active {
+.active-header {
   color: #D8D8D8 !important;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+.active-main {
+  opacity: 1 !important;
+}
+
+.active-line {
+  visibility: visible !important;
+}
+
+.active-lang {
+  font-weight: bold;
+  border-bottom: 1px solid #484A54;
 }
 
 .button {
@@ -32,11 +49,25 @@ a {
 .blue-button {
   border: solid #18a6de;
   color: #18a6de;
+  transition: 0.2s;
+}
+
+.blue-button:hover {
+  border: solid #18a6de;
+  color: white;
+  background-color: #18a6de;
 }
 
 .white-button {
   border: solid #fff;
   color: #fff;
+  transition: 0.2s;
+}
+
+.white-button:hover {
+  background-color: white;
+  border: solid white;
+  color: #18a6de;
 }
 
 @font-face {
@@ -157,6 +188,18 @@ header .container nav .nav-right a {
   color: #484A54;
 }
 
+header .container nav .nav-right a.button {
+  background-color: #18a6de;
+  border: solid #18a6de;
+  transition: 0.2s;
+  color: white;
+}
+
+header .container nav .nav-right a.button:hover {
+  background-color: white;
+  color: #18a6de;
+}
+
 header .container nav .nav-right > * {
   margin-left: 30px;
 }
@@ -201,8 +244,8 @@ header .container .jumbotron #jumbo-title #jumbo-subtitle p {
 
 header .container .jumbotron .blumarine {
   position: absolute;
-  bottom: 225px;
-  right: calc(942px - 4.4%);
+  bottom: 221px;
+  right: calc(947px - 4.4%);
 }
 
 header .container .jumbotron .blumarine h5 {
@@ -309,6 +352,7 @@ main #home-help-container {
 }
 
 main #home-help-container .h2-container {
+  margin-right: 40px;
   max-width: 309px;
 }
 
@@ -322,19 +366,26 @@ main #home-help-container .h2-container h2 {
 }
 
 main #home-help-container #home-services-container {
-  height: 100%;
-  max-width: 200px;
-}
-
-main #home-help-container #home-services-container ul {
-  list-style: none;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
 }
 
-main #home-help-container #home-services-container ul li {
+main #home-help-container #home-services-container .services-row {
+  display: flex;
+  flex-direction: row;
+}
+
+main #home-help-container #home-services-container .services-row .h4 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 200px;
+  flex-shrink: 0;
+}
+
+main #home-help-container #home-services-container .services-row .h4 h4 {
   opacity: 0.48;
   font-family: "Butler", sans-serif;
   font-size: 32px;
@@ -344,33 +395,30 @@ main #home-help-container #home-services-container ul li {
   line-height: 40px;
 }
 
-main #home-help-container #home-services-container-description {
-  height: 100%;
-  max-width: 421px;
-}
-
-main #home-help-container #home-services-container-description ul {
-  list-style: none;
-  height: 100%;
+main #home-help-container #home-services-container .services-row .line {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  max-width: 27%;
+  flex-shrink: 2;
 }
 
-main #home-help-container #home-services-container-description ul p {
+main #home-help-container #home-services-container .services-row .line svg {
+  visibility: hidden;
+  width: 100%;
+}
+
+main #home-help-container #home-services-container .services-row .p {
+  width: 421px;
+}
+
+main #home-help-container #home-services-container .services-row .p p {
   opacity: 0.8;
-  font-family: Helvetica;
+  font-family: "FiraSans-Regular", sans-serif;
   font-size: 16px;
   color: #293E59;
   letter-spacing: 0;
   line-height: 24px;
-}
-
-main #home-help-container .line {
-  width: 12.1%;
-  position: absolute;
-  top: 3%;
-  left: 53.5%;
 }
 
 main #why-choose-us .container {
@@ -650,16 +698,17 @@ footer .footer-top {
 }
 
 footer .footer-top .footer-top-left {
-  width: 50%;
+  width: calc(50% - 40px);
+  padding-right: 40px;
+  padding-top: 10px;
 }
 
 footer .footer-top .footer-top-left .text {
-  margin: 30px;
+  max-width: 422px;
   display: flex;
   flex-shrink: 0;
   flex-direction: column;
   justify-content: space-between;
-  width: 422px;
 }
 
 footer .footer-top .footer-top-left .text h3 {
@@ -793,7 +842,6 @@ footer .footer-bottom .footer-bottom-container .social-languages .lang a {
   font-size: 14px;
   color: #293E59;
   letter-spacing: 0;
-  line-height: 20px;
   margin-left: 35px;
 }
 
