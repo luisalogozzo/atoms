@@ -22,8 +22,12 @@ a {
   cursor: pointer;
 }
 
-.active-main {
+h4.active-main {
   opacity: 1 !important;
+}
+p.active-main {
+  opacity: 80% !important;
+
 }
 .active-line {
  visibility: visible !important;
@@ -36,24 +40,23 @@ a {
 
 
 .button {
-  padding: 0px 20px;
+  padding: 10px 20px;
   display: inline-block;
-  height: 40px;
-  border-radius: 20px;
-  font-family: 'FiraSans-Regular', sans-serif;
+  border-radius: 25px;
+  font-family: 'FiraSans-Medium', sans-serif;
   font-size: 14px;
-  font-weight: 500;
-  line-height: 35px;
   text-align: center;
 
 }
 
 .blue-button {
-  border: solid #18a6de;
+  padding-left: 33px;
+  padding-right: 33px;
+  border: 2px solid #18a6de;
   color: #18a6de;
   transition: 0.2s;
   &:hover {
-    border: solid #18a6de;
+    border: 2px solid #18a6de;
     color: white;
     background-color: #18a6de;
   }
@@ -61,12 +64,12 @@ a {
 
 
 .white-button{
-  border: solid #fff;
+  border: 2px solid #fff;
   color: #fff;
   transition: 0.2s;
   &:hover {
     background-color: white;
-    border: solid white;
+    border: 2px solid white;
     color: #18a6de;
   }
 }
@@ -74,6 +77,10 @@ a {
 @font-face {
     font-family: "FiraSans-Regular";
     src: url("../fonts/FiraSans-Regular.ttf");
+}
+@font-face {
+    font-family: "FiraSans-Medium";
+    src: url("../fonts/FiraSans-Medium.ttf");
 }
 @font-face {
     font-family: "Butler";
@@ -154,7 +161,7 @@ a {
 
 header {
   position: relative;
-  height: 1065px;
+  margin-bottom: 195px;
   .container {
 
     nav {
@@ -162,15 +169,15 @@ header {
       align-items: center;
       width: 100%;
       height: 43px;
-      margin-top: 43px;
+      margin-top: 36px;
       .nav-left {
-        width: 50%;
+        width: 30%;
       }
       .nav-right {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        width: 50%;
+        width: 70%;
 
         a {
           font-family: 'Fira Sans', sans-serif;
@@ -179,7 +186,7 @@ header {
         }
         a.button {
           background-color: #18a6de;
-          border: solid #18a6de;
+          border: 2px solid #18a6de;
           transition: 0.2s;
           color: white;
           &:hover {
@@ -206,15 +213,17 @@ header {
         left: 0;
         z-index: 2;
         width: 814px;
+        margin-bottom: 12px;
         h1 {
           font-family: 'Butler', sans-serif;
           font-size: 72px;
           line-height: 80px;
           color: #293E59;
+          margin-bottom: 13px;
         }
         #jumbo-subtitle {
           width: 329px;
-          margin-bottom: 40px;
+          margin-bottom: 24px;
           p {
             font-family: 'FiraSans-Regular', sans-serif;
             font-size: 16px;
@@ -242,6 +251,7 @@ header {
           letter-spacing: 0;
           text-align: right;
           line-height: 18px;
+          white-space: nowrap;
         }
       }
       #jumbo-circle {
@@ -251,13 +261,20 @@ header {
       }
       #jumbo-girl {
         position: absolute;
-        top: 87px;
+        bottom: 226px;
         right: calc(167px - 4.4%);
       }
       #jumbo-line {
         position: absolute;
         bottom: 153px;
-        right: calc(388px - 4.4%);
+        right: calc(392px - 4.4%);
+        width: 657px;
+        #small-line {
+          display: none;
+        }
+        svg {
+          width: 100%;
+        }
       }
 
       .newsletter-box {
@@ -299,15 +316,15 @@ main {
   position: relative;
   #zerogray-wrap {
     margin: auto;
-    height: 120px;
     width: 867px;
+    max-width: 92%;
     padding-bottom: 223px;
+    text-align: center;
     h3 {
+      color: #484A54;
       font-family: 'Butler', sans-serif;
       font-size: 32px;
-      color: #484A54;
       letter-spacing: -0.3px;
-      text-align: center;
       line-height: 40px;
     }
   }
@@ -318,12 +335,10 @@ main {
   }
   #home-help-container {
     position: relative;
-    height: 484px;
     padding-right: 65px;
     padding-left: 65px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-bottom: 150px;
 
     .h2-container {
@@ -337,6 +352,10 @@ main {
         line-height: 56px;
         margin-bottom: 20px;
       }
+      .blue-button{
+        padding-left: 24px;
+        padding-right: 24px;
+      }
     }
 
     #home-services-container {
@@ -347,6 +366,7 @@ main {
       .services-row {
         display: flex;
         flex-direction: row;
+        margin: 15px 0;
         .h4 {
           display: flex;
           align-items: center;
@@ -377,7 +397,7 @@ main {
         .p {
           width: 421px;
           p {
-            opacity: 0.8;
+            opacity: 0.48;
             font-family: 'FiraSans-Regular', sans-serif;
             font-size: 16px;
             color: #293E59;
@@ -396,6 +416,7 @@ main {
         justify-content: flex-end;
         align-items: center;
         height: 601px;
+        background-position: right;
         background-repeat: no-repeat;
         background-size: cover;
         background-image: url('https://api-lunacy.icons8.com/api/assets/ccfc6929-6fab-4910-85db-b82b01b4b229/Group-12.png');
@@ -407,7 +428,7 @@ main {
           flex-direction: column;
           justify-content: space-between;
           align-items: flex-end;
-          margin-right: 120px;
+          margin-right: 10%;
           h3 {
             font-family: 'Butler', sans-serif;
             font-size: 48px;
@@ -448,13 +469,12 @@ main {
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            width: 421px;
+            min-width: 421px;
             height: 600px;
             background-repeat: no-repeat;
 
             .articles-info {
               padding: 30px 20px;
-              width: 375px;
               small {
                 display: block;
                 font-family: 'Helvetica', sans-serif;
@@ -641,7 +661,7 @@ footer {
       padding-right: 40px;
       padding-top: 10px;
       .text {
-        max-width: 422px;
+        max-width: 421px;
         display: flex;
         flex-shrink: 0;
         flex-direction: column;
@@ -671,6 +691,7 @@ footer {
       display: flex;
       width: 50%;
       .nav-container {
+        padding-left: 10px;
         width: 50%;
         nav {
           display: flex;
@@ -687,6 +708,7 @@ footer {
         }
       }
       .cities-container {
+        padding-left: 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -714,6 +736,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        flex-shrink: 0;
         .policies {
           display: flex;
           justify-content: space-between;
@@ -728,10 +751,12 @@ footer {
         }
       }
       .copyright {
+        margin: 0 40px;
         display: flex;
         justify-content: center;
         align-items: flex-end;
         flex-grow: 2;
+        flex-shrink: 3;
         p {
           font-family: 'FiraSans-Regular', sans-serif;
           font-size: 12px;
@@ -766,6 +791,191 @@ footer {
   }
 }
 
+@media screen and (max-width: 1440px) {
+  header .container .jumbotron #jumbo-girl {
+    right: calc(19.6% - 150px);
+  }
+  header .container .jumbotron .blumarine {
+    right: calc(19.6% + 629px);
+  }
+  header .container .jumbotron #jumbo-line {
+    right: calc(19.6% + 75px);
+  }
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+  header {
+    margin-bottom: 100px;
+    .container .jumbotron #jumbo-girl {
+      width: 580px;
+    }
+    .container .jumbotron #jumbo-circle {
+      width: 710px;
+      height: 710px;
+    }
+    .container .jumbotron #jumbo-line {
+      right: calc(19.6% - 93px);
+    }
+    .container .jumbotron .blumarine {
+      right: calc(19.6% + 459px);
+    }
+  }
+  main #home-help-container {
+    flex-direction: column;
+    margin-bottom: 68px;
+    .h2-container {
+      margin-right: 0;
+      margin-bottom: 85px;
+      max-width: 100%;
+    }
+  }
+  main #our-blog .slider .articles {
+    min-width: 316px;
+    height: 450px;
+  }
+
+}
+
+
+
 @media screen and (max-width: 767px) {
+  .container {
+    width: calc(95% - 27px);
+  }
+
+  header .container nav {
+    margin-top: 13px;
+  }
+  header .container nav .nav-left #logo {
+    width: 121px;
+  }
+  header .container nav .nav-right a {
+    display: none;
+  }
+  header .container nav .nav-right a.button {
+    display: inline-block;
+    padding: 2px 15px;
+  }
+  header .container nav .nav-right button.pointer {
+    margin-right: -7px;
+    margin-left: 15px;
+  }
+
+
+  header .container nav .nav-right > * {
+    margin-left: 9px;
+  }
+  header .container .jumbotron{
+    height: 724px;
+    #jumbo-title h1 {
+      font-size: 48px;
+      line-height: 56px;
+    }
+  }
+
+
+  header .container .jumbotron #jumbo-title {
+    top: 10px;
+    width: 100%;
+  }
+  header .container .jumbotron #jumbo-girl {
+    right: calc(19.6% - 63px);
+    top: 363px;
+    width: 327px;
+  }
+  header .container .jumbotron #jumbo-circle {
+    top: 246px;
+    right: calc(-201px - 4.4%);
+    width: 496px;
+    height: 496px;
+  }
+  header .container .jumbotron #jumbo-line {
+    width: 316px;
+    right: calc(19.6% - 50px);
+    top: 614px;
+    #big-line {
+      display: none;
+    }
+    #small-line {
+      display: inline-block;
+    }
+  }
+  header .container .jumbotron .blumarine {
+    z-index: 2;
+    right: calc(19.6% - 63px);
+    top: 303px;
+  }
+
+  header .container .jumbotron .newsletter-box {
+    display: none;
+
+  }
+  main #home-help-container {
+    flex-direction: column;
+    .h2-container {
+      margin-right: 0;
+      margin-bottom: 46px;
+      max-width: 100%;
+    }
+  }
+  main #home-help-container #home-services-container .services-row {
+    flex-direction: column;
+    text-align: left;
+    margin: 22px 0;
+    .h4 {
+      width: 100%;
+      justify-content: flex-start;
+      margin-bottom: 12px;
+      h4 {
+        text-align: left;
+        font-size: 24px;
+        line-height: 30px;
+      }
+    }
+    .p {
+      width: 100%;
+    }
+    .line {
+      display: none;
+    }
+  }
+
+  main #our-blog .slider .articles {
+    min-width: 316px;
+    height: 450px;
+  }
+
+  main #home-circles-main {
+    top: 219px;
+    right: -268px;
+    height: 1200px;
+  }
+
+  main #zerogray-wrap {
+    max-width: 88%;
+    padding-bottom: 115px;
+    h3 {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+
+  main #home-help-container  {
+    width: calc(95% - 27px);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    .h2-container {
+      padding-right: 20px;
+      h2 {
+        font-size: 32px !important;
+        line-height: 40px !important;
+      }
+    }
+  }
 
 }
