@@ -340,6 +340,8 @@ main #home-circles-main {
   position: absolute;
   top: -17px;
   right: -2px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 main #home-help-container {
   min-height: 509px;
@@ -878,6 +880,10 @@ footer .footer-bottom .footer-bottom-container .social-languages .lang a {
     width: calc(95% - 27px);
   }
 
+  header {
+    margin-bottom: 104px;
+  }
+
   header .container nav {
     margin-top: 13px;
   }
@@ -892,7 +898,8 @@ footer .footer-bottom .footer-bottom-container .social-languages .lang a {
 
   header .container nav .nav-right a.button {
     display: inline-block;
-    padding: 2px 15px;
+    margin-top: 4px;
+    padding: 2px 14.1px;
   }
 
   header .container nav .nav-right button.pointer {
@@ -910,6 +917,17 @@ footer .footer-bottom .footer-bottom-container .social-languages .lang a {
   header .container .jumbotron #jumbo-title h1 {
     font-size: 48px;
     line-height: 56px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+  }
+  header .container .jumbotron #jumbo-title a.button {
+    line-height: 16px;
+    margin-top: 2px;
+    padding-left: 30.4px;
+    padding-right: 30.4px;
+  }
+  header .container .jumbotron #jumbo-subtitle {
+    margin-bottom: 22px !important;
   }
 
   header .container .jumbotron #jumbo-title {
@@ -919,12 +937,12 @@ footer .footer-bottom .footer-bottom-container .social-languages .lang a {
 
   header .container .jumbotron #jumbo-girl {
     right: calc(19.6% - 63px);
-    top: 363px;
+    top: 366px;
     width: 327px;
   }
 
   header .container .jumbotron #jumbo-circle {
-    top: 246px;
+    top: 248px;
     right: calc(-201px - 4.9%);
     width: 496px;
     height: 496px;
@@ -933,7 +951,7 @@ footer .footer-bottom .footer-bottom-container .social-languages .lang a {
   header .container .jumbotron #jumbo-line {
     width: 316px;
     right: calc(19.6% - 50px);
-    top: 614px;
+    top: 618px;
   }
   header .container .jumbotron #jumbo-line #big-line {
     display: none;
@@ -945,7 +963,7 @@ footer .footer-bottom .footer-bottom-container .social-languages .lang a {
   header .container .jumbotron .blumarine {
     z-index: 2;
     right: calc(19.6% - 63px);
-    top: 303px;
+    top: 308px;
   }
 
   header .container .jumbotron .newsletter-box {
@@ -985,14 +1003,14 @@ footer .footer-bottom .footer-bottom-container .social-languages .lang a {
   }
 
   main #home-circles-main {
-    top: 219px;
+    top: 223px;
     right: -268px;
     height: 1200px;
   }
 
   main #zerogray-wrap {
     max-width: 88%;
-    padding-bottom: 115px;
+    padding-bottom: 116px;
   }
   main #zerogray-wrap h3 {
     font-size: 24px;
@@ -1011,6 +1029,7 @@ footer .footer-bottom .footer-bottom-container .social-languages .lang a {
   main #home-help-container .h2-container h2 {
     font-size: 32px !important;
     line-height: 40px !important;
+    margin-bottom: 18px;
   }
 
   main #why-choose-us .container {
@@ -1020,7 +1039,7 @@ footer .footer-bottom .footer-bottom-container .social-languages .lang a {
     padding-bottom: 38px;
   }
   main #why-choose-us .container .text {
-    padding-left: 93px;
+    padding-left: 74px;
     height: 259px;
     margin-right: 23px;
   }
@@ -1031,19 +1050,30 @@ footer .footer-bottom .footer-bottom-container .social-languages .lang a {
   main #why-choose-us .container .text p {
     font-size: 16px;
     line-height: 24px;
+    padding-bottom: 0px;
+    margin-bottom: 11px;
+  }
+  main #why-choose-us .container .text a.button {
+    margin-bottom: 0px;
   }
 
   main #our-blog {
     margin-top: 110px;
+  }
+  main #our-blog .container {
+    margin-bottom: 1px;
   }
   main #our-blog .container h2 {
     font-size: 32px;
     line-height: 40px;
     margin-bottom: 5px;
   }
+  main #our-blog .container p {
+    padding-bottom: 7px;
+  }
 
   main #our-blog .slider .articles {
-    margin: 12px 12px 22px;
+    margin: 12px 12px 23px;
     min-width: 239px;
     height: 341px;
   }
@@ -1055,11 +1085,14 @@ footer .footer-bottom .footer-bottom-container .social-languages .lang a {
     padding: 2px 0 5px;
     font-size: 24px;
     line-height: 30px;
-    margin: 3px 0 5px;
+    margin: 0;
+  }
+  main #our-blog .slider .articles .articles-info span {
+    margin: 9px 0;
   }
 
   main #our-platform {
-    margin-top: 104px;
+    margin-top: 103px;
   }
   main #our-platform .container {
     flex-direction: column;
@@ -1069,13 +1102,20 @@ footer .footer-bottom .footer-bottom-container .social-languages .lang a {
     width: 327px;
     background-image: url("../images/Rectangle.jpg");
   }
+  main #our-platform .container .text {
+    margin: 22px 0px 17px 23px;
+    padding-top: 8px;
+    padding-bottom: 14px;
+  }
   main #our-platform .container .text h3 {
     font-size: 32px;
     line-height: 40px;
+    margin-bottom: 3px;
   }
 
   main #from-our-studio {
     margin-top: 89px;
+    margin-bottom: 104px;
   }
   main #from-our-studio .container {
     align-items: flex-start;
@@ -1091,11 +1131,13 @@ footer .footer-bottom .footer-bottom-container .social-languages .lang a {
   main #from-our-studio .container .newsletter-box h3 {
     font-size: 24px;
     line-height: 30px;
+    margin-bottom: 20px;
   }
   main #from-our-studio .container .newsletter-box .email {
-    margin-top: 34px;
+    margin-top: 36px;
   }
   main #from-our-studio .container .newsletter-box .email .email-input-container {
+    margin-bottom: 16px;
     border-bottom: 1px solid black;
   }
   main #from-our-studio .container .newsletter-box .email .email-input-container .email-input {
@@ -1108,19 +1150,23 @@ footer .footer-bottom .footer-bottom-container .social-languages .lang a {
     letter-spacing: 0;
     line-height: 24px;
   }
-  main #from-our-studio .container .newsletter-box .email label {
+  main #from-our-studio .container .newsletter-box .email .checkbox-container input.checkbox {
+    margin-top: 3px;
+  }
+  main #from-our-studio .container .newsletter-box .email .checkbox-container label {
     font-family: "FiraSans-Regular", sans-serif;
     font-size: 12px;
     color: #9B9B9B;
     letter-spacing: 0;
     line-height: 18px;
+    margin-top: 0;
   }
 
   footer {
     height: 1203px;
   }
   footer .footer-top {
-    padding: 55px 0 9px;
+    padding: 56px 0 24px;
     flex-direction: column;
     height: 100%;
   }
@@ -1131,8 +1177,11 @@ footer .footer-bottom .footer-bottom-container .social-languages .lang a {
     padding-right: 0;
     padding-top: 0;
     width: 100%;
-    padding-bottom: 64px;
+    padding-bottom: 63px;
     border-bottom: 1px solid #D8D8D8;
+  }
+  footer .footer-top .footer-top-left .text {
+    max-width: 100%;
   }
   footer .footer-top .footer-top-left .text h3 {
     font-size: 40px;
@@ -1155,10 +1204,12 @@ footer .footer-bottom .footer-bottom-container .social-languages .lang a {
     padding-left: 0;
   }
   footer .footer-top .footer-top-right .nav-container nav {
+    height: 401px;
     padding-right: 15px;
+    padding-bottom: 20px;
   }
   footer .footer-top .footer-top-right .nav-container nav a {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
   }
   footer .footer-top .footer-top-right .cities-container {
     text-align: right;
@@ -1169,7 +1220,7 @@ footer .footer-bottom .footer-bottom-container .social-languages .lang a {
   }
   footer .footer-bottom {
     height: 400px;
-    padding: 38px 0 40px;
+    padding: 37px 0 40px;
   }
   footer .footer-bottom .footer-bottom-container {
     flex-direction: column;
@@ -1199,13 +1250,14 @@ footer .footer-bottom .footer-bottom-container .social-languages .lang a {
   }
   footer .footer-bottom .footer-bottom-container .social-languages .social {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 52px;
+    padding-top: 18px;
   }
   footer .footer-bottom .footer-bottom-container .policies.display-none {
     display: flex;
     justify-content: space-between;
     width: 205px;
-    margin-top: 46px;
+    margin-top: 47px;
   }
   footer .footer-bottom .footer-bottom-container .policies.display-none a {
     font-family: "FiraSans-Regular", sans-serif;
