@@ -116,7 +116,7 @@ p.active-main {
 }
 .newsletter-box .email .email-input-container {
   padding-bottom: 2px;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 .newsletter-box .email .email-input-container .email-input {
   display: inline;
@@ -145,7 +145,6 @@ p.active-main {
 .newsletter-box .email label {
   font-family: "FiraSans-Regular", sans-serif;
   font-size: 12px;
-  margin-top: 4px;
 }
 .newsletter-box .email .checkbox-container {
   margin-top: 10px;
@@ -1121,7 +1120,7 @@ footer .footer-bottom .footer-bottom-container .social-languages .lang a {
     align-items: flex-start;
     width: 100%;
     height: 540px;
-    background-position: left;
+    background-position: bottom;
     background-image: url("../images/chair-sm.jpg");
   }
   main #from-our-studio .container .newsletter-box {

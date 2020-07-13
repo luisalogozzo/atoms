@@ -1072,7 +1072,7 @@ footer {
       padding-left: 74px;
       height: 259px;
       margin-right: 23px;
-
+      max-width: 400px;
       h3 {
       font-size: 32px;
       line-height: 40px;
@@ -1154,7 +1154,7 @@ footer {
       align-items: flex-start;
       width: 100%;
       height: 540px;
-      background-position: left;
+      background-position: bottom;
       background-image: url('../images/chair-sm.jpg');
       .newsletter-box {
         position: static;
